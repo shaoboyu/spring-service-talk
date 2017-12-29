@@ -1,3 +1,11 @@
 spring:
   profiles:
     active: dev
+
+  #要严格解析XML格式的文档，遇到不闭合标签会报这个错误
+  thymeleaf:
+        mode: LEGACYHTML5
+         # 模板缓存开关
+        cache: false
+        access_log_enabled: true
+        basedir: target/tomcat

@@ -1,6 +1,2 @@
 server:
   port: 8082
-  context-path: /talk
-girl:
-  cupSize: c
-  age: 18
