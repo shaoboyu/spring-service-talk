@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="5 minutes" debug="false">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoder 默认配置为打印到控制台 -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{32} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!--创建一个打印服务日志到指定目录的appender-->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>D:\data\log\log_%d{yyyy-MM-dd HH}.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{32} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="INFO">
+        <!--root将级别为"INFO"及大于"INFO"的日志信息交给已经配置好的名为"STDOUT"的appender处理，-->
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
