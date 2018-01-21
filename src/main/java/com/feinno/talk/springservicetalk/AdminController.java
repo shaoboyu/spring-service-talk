@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class HelloController {
+public class AdminController {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(AdminController.class);
 
-    @RequestMapping(value = "/hello" ,method = RequestMethod.GET)
+    @RequestMapping(value = "/admin",method = RequestMethod.GET)
     public String hello(){
-        LOGGER.info("HelloController start");
-        return "index";
+        LOGGER.info("AdminController start");
+        return "admin";
     }
 }
