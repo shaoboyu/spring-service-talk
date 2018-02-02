@@ -67,9 +67,13 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
+		<!--alibaba Fastjson-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.3</version>
+		</dependency>
 	</dependencies>
-
-
 
 	<build>
 		<plugins>
@@ -79,7 +83,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 
 </project>
