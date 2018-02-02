@@ -1,4 +1,4 @@
-package com.feinno.talk.springservicetalk;
+package com.feinno.talk.springservicetalk.com.feinno.talk.service.controller;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.ResourceUtils;

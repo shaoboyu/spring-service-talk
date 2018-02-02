@@ -1,0 +1,12 @@
+CREATE TABLE TalkUser
+(
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    userID VARCHAR(32) NOT NULL,
+    passWord VARCHAR(32) NOT NULL,
+    userName VARCHAR(32),
+    userAge VARCHAR(6),
+    mobileNO VARCHAR(16) NOT NULL,
+    email VARCHAR(32),
+    `like` VARCHAR(64),
+    timestamp VARCHAR(32)
+);

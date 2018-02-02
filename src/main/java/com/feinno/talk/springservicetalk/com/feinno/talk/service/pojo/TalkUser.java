@@ -12,13 +12,13 @@ public class TalkUser {
     /**
      * 用户唯一ID
      * */
-    @JSONField(name = "id")
+    @JSONField(name = "userID")
     private String userID;
     /**
      * 用户密码
      * */
-    @JSONField(name = "password")
-    private String password;
+    @JSONField(name = "passWord")
+    private String passWord;
     /**
      * 用户名
      * */
@@ -58,12 +58,12 @@ public class TalkUser {
         this.userID = userID;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPassWord() {
+        return passWord;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
     }
 
     public String getUserName() {

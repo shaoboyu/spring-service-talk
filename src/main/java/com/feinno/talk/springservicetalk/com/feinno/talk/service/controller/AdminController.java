@@ -1,4 +1,4 @@
-package com.feinno.talk.springservicetalk;
+package com.feinno.talk.springservicetalk.com.feinno.talk.service.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
