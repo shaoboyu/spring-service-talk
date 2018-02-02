@@ -52,3 +52,5 @@ fix bug修复
 ref 代码重构
 
 opt 整理优化
+
+项目自动化构建命令：mvn clean compile assembly:single

@@ -5,7 +5,7 @@ spring:
   #要严格解析XML格式的文档，遇到不闭合标签会报这个错误
   thymeleaf:
         mode: LEGACYHTML5
-         # 模板缓存开关
+        # 模板缓存开关
         cache: false
         access_log_enabled: true
         basedir: target/tomcat
@@ -19,7 +19,7 @@ spring:
           url: jdbc:mysql://127.0.0.1:3306/talk
           username: root
           password: root
-          # 使用druid数据源
+          # 使用druid做数据连接池
           type: com.alibaba.druid.pool.DruidDataSource
           driver-class-name: com.mysql.jdbc.Driver
           filters: stat
