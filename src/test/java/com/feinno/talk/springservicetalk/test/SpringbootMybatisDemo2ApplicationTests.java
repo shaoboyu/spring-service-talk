@@ -9,6 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 /**
  * Created by yushaobo on 18-2-2.
+ * 用于单元测试
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
