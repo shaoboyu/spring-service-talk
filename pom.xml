@@ -88,7 +88,7 @@
 			<version>1.1.2</version>
 		</dependency>
 
-		<!-- alibaba的druid数据库连接池 -->
+		<!-- alibaba的druid数据库连接池spring-boot插件 -->
 		<dependency>
 		<groupId>com.alibaba</groupId>
 		<artifactId>druid-spring-boot-starter</artifactId>
@@ -103,17 +103,52 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<!--运行jar包时运行的主类，要求类全名-->
+							<mainClass>com.feinno.talk.springservicetalk.SpringServiceTalkApplication</mainClass>
+							<!-- 是否指定项目classpath下的依赖 -->
+									<addClasspath>true</addClasspath>
+							<!-- 指定依赖的时候声明前缀 -->
+							<classpathPrefix>./</classpathPrefix>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>3.0.0</version>
-				<configuration>
-					<descriptors>
-						<descriptor>src/main/resources/assembly/package.xml</descriptor>
-					</descriptors>
-				</configuration>
+				<executions>
+					<execution><!-- 配置执行器 -->
+						<id>make-assembly</id>
+						<phase>package</phase><!-- 绑定到package生命周期阶段上 -->
+						<goals>
+							<goal>single</goal><!-- 只运行一次 -->
+						</goals>
+						<configuration>
+							<finalName>${project.name}</finalName>
+							<descriptor>src/main/resources/assembly/package.xml</descriptor><!--配置描述文件路径-->
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
+
+			<!--<plugin>-->
+				<!--<groupId>org.apache.maven.plugins</groupId>-->
+				<!--<artifactId>maven-assembly-plugin</artifactId>-->
+				<!--<version>3.0.0</version>-->
+				<!--<configuration>-->
+					<!--<descriptors>-->
+						<!--<descriptor>src/main/resources/assembly/package.xml</descriptor>-->
+					<!--</descriptors>-->
+				<!--</configuration>-->
+			<!--</plugin>-->
 		</plugins>
 	</build>
 

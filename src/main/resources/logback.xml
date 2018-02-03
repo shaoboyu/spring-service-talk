@@ -8,7 +8,7 @@
     </appender>
     <!--创建一个打印服务日志到指定目录的appender-->
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>D:\data\log\log_%d{yyyy-MM-dd HH}.log</file>
+        <file>/data/log/log_%d{yyyy-MM-dd HH}.log</file>
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{32} - %msg%n</pattern>
         </encoder>
