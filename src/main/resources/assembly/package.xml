@@ -19,5 +19,10 @@
             <directory>src/main/resources/bin</directory>
             <outputDirectory>/</outputDirectory>
         </fileSet>
+
+        <fileSet>
+            <directory>src/main/resources/</directory>
+            <outputDirectory>/conf</outputDirectory>
+        </fileSet>
     </fileSets>
 </assembly>
