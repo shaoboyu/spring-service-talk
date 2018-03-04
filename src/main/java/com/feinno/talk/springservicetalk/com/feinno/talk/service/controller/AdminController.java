@@ -11,9 +11,5 @@ public class AdminController {
 
     private static Logger LOGGER = LoggerFactory.getLogger(AdminController.class);
 
-    @RequestMapping(value = "/admin",method = RequestMethod.GET)
-    public String hello(){
-        LOGGER.info("AdminController start");
-        return "admin";
-    }
+
 }
