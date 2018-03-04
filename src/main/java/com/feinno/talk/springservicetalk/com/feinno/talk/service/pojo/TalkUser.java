@@ -9,41 +9,49 @@ import java.util.Date;
  * 用户表
  */
 public class TalkUser {
+
     /**
      * 用户唯一ID
      * */
     @JSONField(name = "userID")
     private String userID;
+
     /**
      * 用户密码
      * */
     @JSONField(name = "passWord")
     private String passWord;
+
     /**
      * 用户名
      * */
     @JSONField(name = "userName")
     private String userName;
+
     /**
      * 年龄
      * */
     @JSONField(name = "userAge")
     private String userAge;
+
     /**
      * 手机号
      * */
     @JSONField(name = "mobileNO")
     private String mobileNO;
+
     /**
      * 邮箱
      * */
     @JSONField(name = "email")
     private String email;
+
     /**
      * 兴趣爱好
      * */
     @JSONField(name = "like")
     private String like;
+
     /**
      * 时间戳
      * */

@@ -50,11 +50,13 @@ public class TalkProduct {
      * */
     @JSONField(name = "content")
     private String content;
+
     /**
      *已续接的文章
      * */
     @JSONField(name = "finshContet")
     private String finshContet;
+
     /**
      *时间戳
      * */

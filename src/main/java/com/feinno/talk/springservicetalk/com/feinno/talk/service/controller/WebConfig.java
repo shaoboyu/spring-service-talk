@@ -18,9 +18,9 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
-        registry.addResourceHandler("/templates/**").addResourceLocations(ResourceUtils.CLASSPATH_URL_PREFIX+"/templates/");
-        registry.addResourceHandler("/layui/**").addResourceLocations(ResourceUtils.CLASSPATH_URL_PREFIX+"/layui/");
-        registry.addResourceHandler("/admin/**").addResourceLocations(ResourceUtils.CLASSPATH_URL_PREFIX+"/admin/");
+        registry.addResourceHandler("/**").addResourceLocations(ResourceUtils.CLASSPATH_URL_PREFIX+"/templates/");
+//        registry.addResourceHandler("/templates/talker/**").addResourceLocations(ResourceUtils.CLASSPATH_URL_PREFIX+ "/templates/talker/");
+//        registry.addResourceHandler("/admin/**").addResourceLocations(ResourceUtils.CLASSPATH_URL_PREFIX+"/admin/");
         super.addResourceHandlers(registry);
     }
 }
